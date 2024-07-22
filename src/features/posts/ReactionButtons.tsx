@@ -18,7 +18,7 @@ const ReactionButtons: React.FC<{ post: Post }> = ({ post }: { post: Post }) => 
             <button
                 key={name}
                 type="button"
-                className=""
+                className="px-1"
                 onClick={() => dispatch(reactionAdded({ id: post.id, reaction: name }))}
             >
                 {emoji} {post.reactions[name]}
